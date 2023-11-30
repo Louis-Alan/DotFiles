@@ -84,6 +84,11 @@ return {
       end,
     })
 
+    lspconfig.emmet_ls.setup {
+      on_attach = on_attach,
+      capabilities = capabilities,
+    }
+
     -- configure typescript server with plugin
     lspconfig["tsserver"].setup({
       capabilities = capabilities,
